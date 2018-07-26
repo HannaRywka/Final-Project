@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="360.0" prefHeight="359.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicalgameapplication.GameController">
+   <children>
+      <ImageView fitHeight="360.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgAnimal" fitHeight="150.0" fitWidth="200.0" layoutX="344.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBalloon" fitHeight="72.0" fitWidth="187.0" layoutX="459.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@balloon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMusicalNote" fitHeight="50.0" fitWidth="50.0" layoutX="226.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@semibreve.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelAnimalSpeak" layoutX="479.0" layoutY="108.0" text="?" textAlignment="CENTER" />
+      <Label fx:id="labelTimer" layoutX="179.0" layoutY="108.0" text="Click on the note to start" />
+      <Button fx:id="btnHold" layoutX="208.0" layoutY="259.0" mnemonicParsing="false" text="Tap and hold" />
+      <JFXDrawer fx:id="menuDrawer" defaultDrawerSize="200.0" prefHeight="360.0" prefWidth="130.0" />
+      <JFXHamburger fx:id="btnHamburger" layoutX="586.0" layoutY="21.0" />
+      <ImageView id="imgMusicalScale" fx:id="imgMusicalScale" fitHeight="72.0" fitWidth="59.0" layoutX="222.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

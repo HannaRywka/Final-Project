@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="360.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicalgameapplication.LogInController">
+   <children>
+      <ImageView fitHeight="387.0" fitWidth="640.0" layoutY="-19.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="304.0" layoutY="71.0" text="Log In" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <GridPane layoutX="179.0" layoutY="143.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="92.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="163.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="labelName" prefHeight="49.0" prefWidth="101.0" text="Name:" />
+            <Label fx:id="labelPassword" text="Password:" GridPane.rowIndex="1" />
+            <TextField fx:id="txtFieldName" prefHeight="25.0" prefWidth="154.0" promptText="Name" GridPane.columnIndex="1" />
+            <TextField fx:id="txtFieldPassword" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnFacebook" layoutX="273.0" layoutY="256.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="f" />
+      <Button fx:id="btnGoogle" layoutX="314.0" layoutY="256.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="G" />
+      <Button fx:id="btnStart" layoutX="369.0" layoutY="256.0" mnemonicParsing="false" onAction="#callTutorial" prefHeight="30.0" prefWidth="60.0" text="Go!" />
+      <Hyperlink fx:id="hyperForgotPassword" layoutX="272.0" layoutY="217.0" onAction="#callForgotPassword" text="Forgot Password" />
+   </children>
+</AnchorPane>

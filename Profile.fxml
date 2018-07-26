@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="360.0" prefHeight="360.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicalgameapplication.ProfileController">
+   <children>
+      <ImageView fitHeight="380.0" fitWidth="653.0" layoutY="-19.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelProfile" layoutX="284.0" layoutY="18.0" text="Profile">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <ImageView fx:id="imgUser" fitHeight="150.0" fitWidth="200.0" layoutX="159.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@userPic.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="hyperUploadPicture" layoutX="159.0" layoutY="229.0" onAction="#callUploadPicture" text="Upload New Picture" />
+      <Hyperlink fx:id="hypeTakePicture" layoutX="159.0" layoutY="252.0" onAction="#callTakePicture" text="Take New Picture" />
+      <VBox layoutX="333.0" layoutY="89.0" spacing="40.0">
+         <children>
+            <Label fx:id="labelName" text="Name:" />
+            <Label fx:id="labelEmail" text="Email:" />
+            <Label fx:id="labelLevel" text="Level:" />
+         </children>
+      </VBox>
+      <Button fx:id="btnBackGame" layoutX="527.0" layoutY="313.0" mnemonicParsing="false" onAction="#callBackGame" text="Back to game" />
+      <JFXHamburger fx:id="btnHamburger" layoutX="585.0" layoutY="21.0" />
+      <JFXDrawer fx:id="menuDrawer" defaultDrawerSize="200.0" layoutY="1.0" maxHeight="360.0" prefHeight="360.0" prefWidth="130.0" />
+   </children>
+</AnchorPane>
